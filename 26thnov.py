@@ -169,6 +169,9 @@ for i in n:
         s = s + int(i)
 print("sum of integers is: ", s)
 
+
+
+
 #22. Python program to print all non repeating character in string.
 x = input("enter the string: ")
 n_ch = ""
