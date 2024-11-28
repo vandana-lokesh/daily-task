@@ -110,10 +110,32 @@ print("vowels count is: ", vow_c)
 print("consonents count is: ", cons_c)
 
 #17. Python program to print the highest frequency character in a String. 
+b = input("enter the string: ")
+d = {}
+for i in b:
+    if i in d:
+        d[i] = d[i] + 1
+    else:
+        d[i] = 1
+print(d)
+hfe = max(d, key = d.get)
+r = {hfe : d[hfe]}
+print("the heighest frequency element is: ", r)
 
 #18. Python program to Replace First Occurrence Of Vowel With ‘-‘ in String. 
-#z = input("enter the string: ")
-vowelss = "aeiou"
+z = input("enter the string: ")
+vowelss = "aeiouAEIOU"
+e_s = ""
+for i in z:
+    if i not in vowelss:
+        e_s = e_s + i 
+    elif "-" not in e_s:
+        e_s = e_s + "-"
+    elif i in vowelss and "-" in e_s:
+        e_s = e_s + i
+print("original string is: ",z)
+print("string after replacing with - is: ", e_s)
+
 
 #19. Python program to count alphabets, digits and special characters. 
 x = input("enter the string: ")
@@ -121,15 +143,16 @@ c_alph = 0
 c_d = 0
 c_spcl = 0
 for i in x:
-    if x.isalpha():
+    if i.isalpha():
         c_alph= c_alph + 1
-    elif x.isdigit():
+    elif i.isdigit():
         c_d = c_d + 1
     else:
         c_spcl = c_spcl + 1
 print("count of alphabets is: ", c_alph)
 print("count of digits is: ", c_d)
 print("count of special charecters is: ", c_spcl)
+
 
 # 20. Python program to check given character is digit or not using isdigit() method. 
 z = input("enter the charecters: ")
@@ -142,10 +165,17 @@ else:
 n = input("enter the string: ")
 s = 0
 for i in n:
-    s = s + int(i)
+    if i.isdigit():
+        s = s + int(i)
 print("sum of integers is: ", s)
 
 #22. Python program to print all non repeating character in string.
+x = input("enter the string: ")
+n_ch = ""
+for i in x:
+    if i not in n_ch:
+        n_ch = n_ch + i
+print("non repating charecters are: ",n_ch)
 
 #23. Python program to copy one string to another string. 
 x = input("enter the string: ")
