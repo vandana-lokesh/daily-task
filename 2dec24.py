@@ -45,8 +45,8 @@ print(l7[1:8])
 
 #without using eval, take input user , print list type and int type
 l8 = input("enter the string: ")
-l8.split()
-print(type(l8))
+l_l8 = l8.split()
+print(type(l_l8))
 
 
 #programm to print integer list of divisable with 7 but not with 5 from 100 to 200
