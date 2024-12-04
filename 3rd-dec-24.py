@@ -110,7 +110,8 @@ s1_rev = ""
 s1_split = s1.split()
 print(s1_split)
 rev_string = s1_split[::-1]
-print(rev_string)
+j_rev_string = " ".join(rev_string)
+print(j_rev_string)
 
 
 
