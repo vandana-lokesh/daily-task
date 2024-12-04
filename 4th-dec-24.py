@@ -98,5 +98,78 @@ print("Cloned list after modification:", cloned_list)
 
 #5. Mathematical Operations:
 #1.Create two lists of numbers, and use the + operator to concatenate them. Then, use the * operator to repeat the elements of one list 3 times.
+a = [1, 2, 3, 4]
+b = [5, 6, 7, 8]
+a_b = a + b
+print("list after concatinating is: ", a_b)
+
+repeat_ele = a * 3  # *used to repeat ele n times
+print("list after repeating 3 times is: ", repeat_ele)
+
 #2.Given a list of numbers, write a Python program to create a new list where each element is doubled (i.e., each element is multiplied by 2).
+x = [1, 2, 3, 4, 5]
+for i in x:
+    double_x = i * 2
+    print(double_x)
+
+#6. Membership Operators:
+#1.Write a Python program to check if a specific element (e.g., 5) exists in a given list using the in operator. If it exists, print its position; otherwise, print "Element not found."
+y = [1, 2, 3, 4, 5, 6, 7, 8]
+n = int(input("enter the number: "))
+if i in y:
+    pos_i = y.index(n)
+    print("position of element is: ", pos_i)
+else:
+    print("element not found")
+
+#Given a list of student names, check if "John" and "Sara" are in the list using the in operator.
+stu_names = ["john", "sara"]
+if "john" and "sara" in stu_names:
+    print("found the elements")
+else:
+    print("not found")
+
+
+#7. Nested Lists:
+#1.Write a Python program to create a 3x3 matrix (nested list) and print the matrix. Then, access and print the element at row 2, column 3.
+m = [[1, 2, 3], 
+     [4, 5, 6],
+     [7, 8, 9]]
+for i in m:
+    print(i)
+
+ele_m = m[1][2]
+print("element in 2nd row and 3rd column is: ",ele_m)
+
+#2.Create a nested list representing a list of students' names and their respective grades. Write a Python program to print each student's name along with their grade.
+st_lst = [["ram", "A"], ["sita", "B"], ["david","C"]]
+for i in st_lst:
+    name, grade = i
+    print("name is:",name , "and grade is: ", grade)
+
+#8. Advanced Challenges:
+#1.Create a list of numbers from 1 to 20. Write a Python program to generate two separate lists:
+#One containing only the even numbers.
+#Another containing only the odd numbers.
+lst_num = [1, 2, 3,4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+evn_lst = []
+odd_lst = []
+for i in lst_num:
+    if i % 2 == 0:
+        evn_lst.append(i)
+    else:
+        odd_lst.append(i)    
+print("even no list is: ",evn_lst)
+print("odd no list is: ",odd_lst)
+
+#2.Write a Python program that reads a list of integers and returns a new list containing only the unique elements (i.e., removing duplicates).
+l = [4, 3, 5,1 , 3, 4, 2, 7, 6, 5, 4, 1, 8, 9, 8]
+em_l = []
+for i in l:
+    if i not in em_l:
+        em_l.append(i)
+print(em_l)
+
+#Given a list of tuples representing (name, age), sort the list by age in ascending order.
+
 
