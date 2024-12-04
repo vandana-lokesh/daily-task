@@ -171,5 +171,3 @@ for i in l:
 print(em_l)
 
 #Given a list of tuples representing (name, age), sort the list by age in ascending order.
-
-
