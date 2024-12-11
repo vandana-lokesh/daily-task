@@ -48,15 +48,6 @@ t5 = (1, 2, 3, 4)
 t5_reverse = t5[::-1]
 print("given tuple in reverse order is: ",t5_reverse)
 
-#6.Write a function that takes a tuple and a value as inputs and returns the number of times the value appears in the tuple.
-t6 = (1, 2, 3, 3, 2, 2, 1, 4, 1, 1)
-count = 0
-val = input("enter the input: ")
-for i in t6:
-    if i == val:
-        count = count + 1
-print(count)
-
 #9.Write a function that checks if a given element exists in a tuple. Return `True` if it exists, otherwise return `False`.
 t9 = (1, 2, 3, 4, 5)
 print("original tuple is: ", t9)
