@@ -1,19 +1,16 @@
 #1.Write a function that takes a tuple and an index as inputs and returns the element at the given index. Handle the case where the index is out of bounds.
-"""tpl = (1,2,3,4,5,6)
-for i in tpl:
-    if i < 0 and i >= len(tpl):
-        print("inedx is out of bond")
-    else:
-        #ind_tpl = int(input("enter the index value: "))
-        indtpl = tpl.index(int(input("enter the index value: ")))
-        print("value of given index is: ", indtpl)"""
 
-t = (1, 2, 3, 4, 5, 6)
+"""t = (1, 2, 3, 4, 5, 6)
 ind = t[1]
-print(ind)
+print(ind)"""
 
+t = (1, 2, 3, 4, 5)
 ind1 = t[int(input("enter the index: "))]
-print("value of given index is: ", ind1)
+if ind1 >= len(t) and ind1 < 0:
+    print("out of bond")
+else:
+    #ind1 = t[int(input("enter the index: "))]
+    print("value of given index is: ", ind1)
 
 #2.Write a function to concatenate two tuples into one.
 t1 = (1, 2, 3)
@@ -22,19 +19,31 @@ con_t = t1 + t2
 print("tuple after concatinating is: ", con_t)
 
 #3.Write a function that takes a tuple and a value as inputs and returns the number of times the value appears in the tuple.
+#6.Write a function that takes a tuple and a value as inputs and returns the number of times the value appears in the tuple.
+t6 = (1, 2, 3, 3, 2, 2, 1, 4, 1, 1)
+count = 0
+val = input("enter the input: ")
+for i in t6:
+    if i == val:
+        count = count + 1
+print(count)
+
 t3 = (1, 2, 2, 3, 4, 1, 1, 5)
 value = t3.count(input("enter the value: "))
 #t3.count(value)
 print("given value is occured ",value , "times")
 
 #4.Write a function that calculates the length of a tuple without using the built-in `len()` function.
+#7.Write a function that calculates the length of a tuple without using the built-in `len()` function.
 t4 = (1, 2, 3)
 count = 0
 for i in t4:
     count = count + 1
-print(i)
+print("the length of tuple is: ", i)
 
 #5.Write a function that takes a tuple as input and returns a new tuple with the elements in reverse order.
+#8.Write a function that takes a tuple as input and returns a new tuple with the elements in reverse order.
+
 t5 = (1, 2, 3, 4)
 t5_reverse = t5[::-1]
 print("given tuple in reverse order is: ",t5_reverse)
@@ -47,12 +56,6 @@ for i in t6:
     if i == val:
         count = count + 1
 print(count)
-
-#7.Write a function that calculates the length of a tuple without using the built-in `len()` function.
-
-
-#8.Write a function that takes a tuple as input and returns a new tuple with the elements in reverse order.
-
 
 #9.Write a function that checks if a given element exists in a tuple. Return `True` if it exists, otherwise return `False`.
 t9 = (1, 2, 3, 4, 5)
