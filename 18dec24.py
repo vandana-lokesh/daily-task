@@ -55,9 +55,35 @@ def count_vowels(str):
 str = input("enter the input: ")
 count_vowels(str)
 
+"""
+
 
 #7.Create a function `is_prime` that takes a number as input and returns `True` if the number is prime, and `False` otherwise.
+n = int(input("enter the no: "))
+for i in range(2, n):
+    if n % i == 0:
+        print("False")
+        break
+else:
+    print("True")
 
+def is_prime(n):
+    #n = int(input("enter the no: "))
+    for i in range(2, n):
+        if n % i == 0:
+            print("False")
+            break
+    else:
+        print("True")
+
+n = int(input("enter the no: "))
+is_prime(n)
+is_prime(5)
+
+
+
+
+"""
 #8.Write a recursive function `recursive_sum` that takes a positive integer `n` and returns the sum of all numbers from 1 to `n`. For example, `recursive_sum(5)` should return \(1 + 2 + 3 + 4 + 5 = 15\).
 
 #9.Write a function `calculator` that takes three parameters: two numbers and an operator (as a string: `"+"`, `"-"`, `"*"`, `"/"`). The function should perform the operation on the two numbers and return the result.
@@ -100,7 +126,6 @@ def reverse_string(str):
 str = input("enter the string: ")
 reverse_string(str)
 
-"""
 
 #12.Write a function `sort_dict_by_value` that takes a dictionary as input and returns a list of tuples sorted by the dictionary values in ascending order.
 def sort_dict_by_values(d):
@@ -114,4 +139,5 @@ def sort_dict_by_values(d):
 d = {'ram': 20, 'sita': 8, 'shiv': 10}
 sort_dict_by_values(d)
 
+"""
 
