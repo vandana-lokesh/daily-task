@@ -1,5 +1,5 @@
 
-"""
+
 #1.Define a function called `greet` that takes a name as an argument and prints a greeting message like: "Hello, [name]!"
 def greet(name):
     print("Hello,",name,'!')
@@ -55,7 +55,6 @@ def count_vowels(str):
 str = input("enter the input: ")
 count_vowels(str)
 
-"""
 
 
 #7.Create a function `is_prime` that takes a number as input and returns `True` if the number is prime, and `False` otherwise.
@@ -80,11 +79,15 @@ n = int(input("enter the no: "))
 is_prime(n)
 is_prime(5)
 
-
-
-
-"""
 #8.Write a recursive function `recursive_sum` that takes a positive integer `n` and returns the sum of all numbers from 1 to `n`. For example, `recursive_sum(5)` should return \(1 + 2 + 3 + 4 + 5 = 15\).
+def recursive_Sum(n): 
+    if n <= 1: 
+        return n 
+    return n + recursive_Sum(n - 1) 
+  
+n = 5
+print(recursive_Sum(n))
+
 
 #9.Write a function `calculator` that takes three parameters: two numbers and an operator (as a string: `"+"`, `"-"`, `"*"`, `"/"`). The function should perform the operation on the two numbers and return the result.
 def calculator(num1, num2, operator):
@@ -138,6 +141,4 @@ def sort_dict_by_values(d):
 
 d = {'ram': 20, 'sita': 8, 'shiv': 10}
 sort_dict_by_values(d)
-
-"""
 
