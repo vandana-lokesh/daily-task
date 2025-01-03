@@ -22,3 +22,23 @@ output_tuple = flatten_tuple(input_tuple)
 print(output_tuple)  # Output: (1, 2, 3, 4, 5)
 
 
+#factorial function
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+num = 5
+result = factorial(num)
+print(result)  # Output: 1*2*3*4*5 == 120
+
+
+#fibanocci series
+def fibonacci(n):
+    fib_sequence = [0, 1]
+    for i in range(2, n):
+        fib_sequence.append(fib_sequence[i-1] + fib_sequence[i-2])
+    return fib_sequence
+
+n = 7
+print(fibonacci(n))  # Output: [0, 1, 1, 2, 3, 5, 8]
